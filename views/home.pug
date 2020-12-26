@@ -1,0 +1,55 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+    
+
+block content
+        //-navbar is in on template(base.pug).
+        section#introSection
+            div
+                | Wellcome to Aman's Dance Acamedy
+            div.small
+                | Eat Sleep Dance Repeat
+
+        section#missionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/download (1).png")
+
+                    div.card-content
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ex ipsa nesciunt.
+            div.card
+                h3 Dance Dil SE
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/download (2).png")
+
+                        
+                    div.card-content
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ex ipsa nesciunt.
+            div.card
+                h3 Any Body Can Dance
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/images.png")
+
+                        
+                    div.card-content
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ex ipsa nesciunt.
+
+        section#sponsorSection
+            h2  Our Sponsors
+            div#sponsors
+                img(src="/static/images/sp1.png", alt="Sponsor Image" class="spimage")  
+                //alt-tag means text shows before img load(SEO).
+                img(src="/static/images/download (2).png", alt="Sponsor Image" class="spimage") 
+                img(src="/static/images/download (1).png", alt="Sponsor Image" class="spimage") 
+                img(src="/static/images/images.png", alt="Sponsor Image" class="spimage") 

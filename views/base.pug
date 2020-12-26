@@ -1,0 +1,25 @@
+// TEMPLATE INHERITANCE(base.pug is a template) IN PUG
+// Template inheritance: when someone click on contact us page or any other pge, there will should also have our footer
+// and navbar available, so through temp inheri we dont have to write same done again for another pages. 
+doctype html
+html
+    head
+        title Aman Dance Academy
+        block scripts
+        block style
+           
+    body
+        //- navbar is the part of our template
+        nav#navbar.top
+            ul
+                div#logo
+                    img(src="/static/images/logo1.png")
+                    | HDA
+                li #[a(href="/") Home]
+                li #[a(href="/about") About]
+                li #[a(href="/services") Services]
+                li #[a(href="/class") Class Info]
+                li #[a(href="/contact") Contact Us]
+        block content
+        footer#footer
+            | Copyright 2020 reserved AmanDanceAcedmy           

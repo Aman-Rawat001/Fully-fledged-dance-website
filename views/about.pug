@@ -1,0 +1,16 @@
+extends base.pug
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+        include ../static/styleAbout.css
+    
+block content
+    h1#title About
+    div.container
+        div.innercontainer
+            img#image(src="/static/images/aboutimage.jpg", alt="")
+            p#innerpara
+                | Hello guys This is AmanRawat and this is my demo website with both FRONTEND and BACKEND facility. If you have any query regarding webiste development, feel free to direct contact, you can contact us by any social media or you can directly mail us on amanrawa2@gmail.com. We will try our best to help you to get over your problem and solve it as soon as possible. 

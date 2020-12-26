@@ -1,0 +1,67 @@
+// PUG is indentation related language.
+// Writing HTML for our site.
+doctype html
+html
+    head
+        style
+            include ../static/style.css
+    body
+        nav#navbar.top
+            ul
+                div#logo
+                    img(src="/static/images/logo1.png")
+                    | HDA
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]
+
+        section#introSection
+            div
+                | Wellcome to Aman's Dance Acamedy
+            div.small
+                | Eat Sleep Dance Repeat
+
+        section#missionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/download (1).png")
+
+                    div.card-content
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ex ipsa nesciunt.
+            div.card
+                h3 Dance Dil SE
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/download (2).png")
+
+                        
+                    div.card-content
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ex ipsa nesciunt.
+            div.card
+                h3 Any Body Can Dance
+                div.card-box
+                    div.card-img
+                        img(src="/static/images/images.png")
+
+                        
+                    div.card-content
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ex ipsa nesciunt.
+
+        section#sponsorSection
+            h2  Our Sponsors
+            div#sponsors
+                img(src="/static/images/sp1.png", alt="Sponsor Image" class="spimage")  
+                //alt-tag means text shows before img load(SEO).
+                img(src="/static/images/download (2).png", alt="Sponsor Image" class="spimage") 
+                img(src="/static/images/download (1).png", alt="Sponsor Image" class="spimage") 
+                img(src="/static/images/images.png", alt="Sponsor Image" class="spimage") 
+        footer#footer
+            | Copyright 2020 reserved AmanDanceAcedmy
+
+        script
+            include ../static/index.js
